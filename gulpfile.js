@@ -20,7 +20,8 @@ exports.default = () => {
   return src(order)
     .pipe(modifyCssUrls({
       modify: function (url, filePath) {
-        return path.resolve(path.dirname(filePath), url);
+        return path.resolve(path.dirname(filePath), url)
+          .replace(path.resolve(__dirname), 'https://daniel-gorbenko.github.io/practice-bem-flex-grid-figma');
       }
     }))
     .pipe(concat('build.css'))

@@ -1,0 +1,3 @@
+.icon_repeat::after {
+  background-image: url('icon_repeat.svg');
+}

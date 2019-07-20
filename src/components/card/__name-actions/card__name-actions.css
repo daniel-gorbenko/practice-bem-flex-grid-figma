@@ -1,0 +1,7 @@
+.card__actions {
+  border-radius: 100%;
+}
+
+.card__actions:hover {
+  background: #E4E9ED;
+}

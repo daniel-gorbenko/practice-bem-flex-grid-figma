@@ -1,0 +1,18 @@
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.icon::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+}
